@@ -43,8 +43,16 @@ window.addEventListener('scroll', function() {
 
   function togglecontact() {
     var navbarLinks = document.getElementById("form");
+    var toggleButton = document.getElementById("toggleButton");
+    
     navbarLinks.classList.toggle("show");
-}
+    
+    if (navbarLinks.classList.contains("show")) {
+      toggleButton.textContent = "Close";
+    } else {
+      toggleButton.textContent = "Contact Us";
+    }
+  }
 
 
 // Function to check if the element is in the viewport

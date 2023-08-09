@@ -415,13 +415,6 @@
 }
 
 
-
-
-
-
-
-
-
 /* PROMISES */
 .section2{
     min-height: 100vh;
@@ -473,23 +466,6 @@
     width: 40%;
     font-size: 20px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* FOOTERRRRRRRRR */
@@ -549,6 +525,203 @@
     font-size: 2ch;
 }
 
+
+@media only screen and (max-width: 768px) {
+    .navd ul{
+        display: none;
+    }
+    #listitem{
+        display: none;
+        
+    }
+    .logo{
+        margin-left: 2%;
+    }
+    .navbar-toggle{
+        display:block;
+        position: fixed;
+        z-index: 5;
+        background-color: #f31414e7;
+                
+    }
+
+    .whitepart{
+        background-color: #00000054;
+    }
+
+    .navbar-toggle img{
+        position: fixed;
+        height: 50px;
+        margin-left: 42%;
+        margin-top: 10px;
+    }
+    #listitem.show{
+        display: block;
+        position: fixed;
+        z-index: 2;
+        background-color: rgba(255, 255, 255, 0.562);
+        backdrop-filter: blur(10px);
+        backface-visibility: hidden;
+        height: 55rem;
+        width: 100%;
+        color:rgb(5, 5, 5);
+        animation: fadeInTop .5s;
+    }
+
+    @keyframes fadeInTop {
+        from {
+            opacity: 0;
+            transform: translatex(+100%);
+        }
+        to { opacity: 1 }
+    }
+
+    #listitem li{
+        margin-top: 120px;
+        text-align: center;
+        text-decoration: none;
+    }
+    
+    #listitem li a{
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 0px;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        border-radius: 20px;
+        font-size: 3ch;
+    }
+    .chatbox{
+        position: fixed;    
+        top: 620px; /* Adjust the top value to control the overlap amount */
+        left: 63%; /* Adjust the left value to control the overlap amount */
+        z-index: 1; /* A higher z-index value brings an element to the front */
+        width: 8rem;
+        padding: 10px;
+        text-align: center;
+        background-color: #f7efef43;
+        backdrop-filter: blur(5px);
+        border-radius: 20px;
+        color: rgba(232,215,109,255);
+        padding: 10px;
+        font-size: 1.7ch;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 700;
+    }
+    .header{
+        min-height: 100vh;
+        width: 100%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.822),rgba(29, 27, 27, 0.788),#000000),url(assets/Burlingame-Residence-23.jpg);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+    }
+    .text-box {
+        position: relative;
+        animation: slideInFromLeft 2s ease-in-out;
+        animation-fill-mode: forwards; /* Keep the final state of the animation */
+        opacity: 1;
+    }
+    .text-box h1{
+        text-align: left;
+        /* margin-top: 100px; */
+        color: rgb(253, 233, 104);
+        font-size: 35px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-top: 250px;
+        margin-left: 6%;
+        transition: left 2s ease;
+    }
+    .text-box p{
+        text-align: left;
+        margin-top: 5px;
+        color: rgb(253, 233, 104);
+        font-size: 13px;
+        line-height: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-left: 6%;
+    }
+    
+    }
+    }
+    .sidepanel img{
+        width: 160px;
+        height: 100px;
+        margin-left: 10px;
+        opacity: 0.7;
+        margin-top: -10px;
+    }
+    .sidepanel{
+        display: inline-block;
+        background: rgba(241, 241, 241, 0.26);
+        width: 140px;
+        margin-left: 5%;
+        margin-top: 20%;
+        backdrop-filter: blur(10px);
+        border-radius: 20px;
+        padding: 15px;
+        margin-bottom: 5%;
+    }
+    .sidepanel h2{
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 18px;
+        margin-top: -10px;
+    }
+    .sidepanel h3{
+        color: rgb(253, 233, 104);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin-top: -10px;
+    }
+    .sidepanel p{
+        color: white;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 15px;
+        margin-top: -10px;
+    }
+    .sidepanel1 img{
+        width: 130px;
+        opacity: 0.7;
+        margin-bottom: -98px;
+    }
+    .sidepanel1{
+        display: block;
+        background: rgba(241, 241, 241, 0.26);
+        width: 140px;
+        margin-left: 5%;
+        margin-top: 20%;
+        backdrop-filter: blur(10px);
+        border-radius: 20px;
+        padding: 15px;
+        margin-bottom: 5%;
+    }
+    .sidepanel1 h2{
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 18px;
+    }
+    .sidepanel1 h3{
+        color: rgb(253, 233, 104);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin-top: -10px;
+    }
+    .sidepanel1 p{
+        color: white;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 16px;
+        margin-bottom: -20px;
+        margin-top: -10px;
+    }
+    .side{
+        display: flex;
+    }
+    .sidepanel{
+        position: relative;
+        animation: slideInFromRight 1.4s ease-in-out;
+        animation-fill-mode: forwards;
+        opacity: 0;
+    }
+}
 
 
 
