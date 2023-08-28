@@ -17,8 +17,8 @@
         <button class="navbar-toggle" onclick="toggleNavbar()"><img src="assets/menu.png" alt="" height="64px"></button>
          <ul class="change-color">
             <li><a href= index.html>HOME</li>
-            <li><a href= car.html>INVESTMENT</a></li>
-            <li><a href= medi.html>INSURANCE</a></li>
+            <li><a href= Investment.html>INVESTMENT</a></li>
+            <li><a href= Ins.html>INSURANCE</a></li>
             <li><a href= loan.html>LOAN</a></li>
             <li><a href= consultation.html>CONSULTATION</a></li>
          </ul>
@@ -26,14 +26,37 @@
     
     <section id="listitem">
         <ul>
-            <li class="first"><a href= >INVESTMENT</li>
-            <li><a href=>REAL ESTATE</a></li>
-            <li><a href=>INSURANCE</a></li>
-            <li><a href=>LOAN</a></li>
-            <li><a href=>CONSULTATION</a></li>
+            <li><a href= index.html>HOME</li>
+            <li class="first"><a href="Investment.html" >INVESTMENT</li>
+            <li><a href="Ins.html">INSURANCE</a></li>
+            <li><a href="loan.html">LOAN</a></li>
+            <li><a href="consultation.html">CONSULTATION</a></li>
          </ul>
     </section>
 
+    <form id="contact-form">
+        <div class="form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <label for="service">Service:</label>
+            <select id="service" name="service">
+                <option value="service1">Loan</option>
+                <option value="service2">Investments</option>
+                <option value="service3">Consultation</option>
+                <option value="service4">Insurance</option>
+            </select>
+                        
+            <button type="submit">Submit</button>
+
+            
+        </div>
+    </form>
+    
     <section class="header">
             <a href="property.html"><img src="" alt=""></a>
     
@@ -58,7 +81,7 @@
             
     </section>
 
-    <button class="chatbox" onclick="togglecontact()">CONTACT US</button>
+    <!-- <button class="chatbox" onclick="togglecontact()">CONTACT US</button> -->
 
     <section class="testimonial">
         <h1>OUR SERVICES</h1>
@@ -70,17 +93,15 @@
                 <div>
                     <h2>Home Loan</h2>
                     <h3>_________________________</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ex velit expedita. Aut inventore quis doloremque cupiditate unde aperiam vero ipsam atque quas? Dolor nulla possimus facilis excepturi molestiae suscipit.</p>
+                    <p>
+                        When you choose our home loan, you gain competitive rates, flexible terms, personalized assistance, and a smooth process, turning your homeownership dreams into reality with confidence and ease.</p>
                 </div>
             </div>
             <div class="testimonial-col1"> 
                 <div>
                     <h2>Find Your Perfect Home</h2>
                     <h3>_________________________</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quisquam ex velit expedita. Aut inventore quis doloremque
-                    cupiditate unde aperiam vero ipsam atque quas? Dolor
-                    nulla possimus facilis excepturi molestiae suscipit.</p>
+                    <p>Our mission is to assist you in finding your dream home. Leveraging our expertise, we curate options that align with your preferences, streamlining the search process. Count on us to guide you towards your perfect home, ensuring a rewarding and stress-free experience in your journey of homeownership.</p>
                 </div>
                 <img src="assets/search1.jpg" alt="">
             </div>
@@ -89,14 +110,14 @@
                 <div>
                     <h2>Home Insurance</h2>
                     <h3>_________________________</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ex velit expedita. Aut inventore quis doloremque cupiditate unde aperiam vero ipsam atque quas? Dolor nulla possimus facilis excepturi molestiae suscipit.</p>
+                    <p>When you choose our home insurance, you're securing comprehensive coverage tailored to your property's needs. With us, you're safeguarding your investment, enjoying peace of mind against unforeseen damages and risks.</p>
                 </div>
             </div>
             <div class="testimonial-col1">
                 <div>
                     <h2>A - Z Property Legal Solutions</h2>
                     <h3>_________________________</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ex velit expedita. Aut inventore quis doloremque cupiditate unde aperiam vero ipsam atque quas? Dolor nulla possimus facilis excepturi molestiae suscipit.</p>
+                    <p>From legal assessments to documentation, our A-Z property legal solutions ensure seamless transactions. Trust us to handle complexities, offering expert guidance and peace of mind throughout your real estate endeavors.</p>
                 </div>
                 <img src="assets/legal1.jpg" alt="">
             </div>
@@ -140,7 +161,7 @@
     <section class="section3">
         <h1>What We Assure</h1>
         <h2>_______</h2>
-        <p class="font"><br><br>When you buy insurance from us, you get more than just financial safety. You also get: our promise of simplifying complex insurance terms and conditions, quick stress-free claims, instant quotes from  <br> top insurers and being present for you in the toughest of times.
+        <p class="font"><br><br>When you buy insurance from us, you get more than just financial safety. You also get: our promise of simplifying complex insurance terms and conditions, quick stress-free claims, instant quotes from top insurers and being present for you in the toughest of times.
         </p>
         <div class="ro1">
             <div class="pro1">
@@ -179,18 +200,14 @@
         <div class="left">
             <img src="assets/logo.png" alt="">
             <p>
-                WINDOW KING, PROFESSIONAL WINDOW CLEANING,
-                IS A LOCAL FAMILY RUN WINDOW CLEANING SERVICE
-                THAT BEEN IN BUSINESS SINCE 1998.
+                Explore a world of financial opportunities with our comprehensive services. Invest wisely, real estate options,assistance for insurance claims, flexible loan options and receive personalized financial consultations
             </p>
         </div>
-
         <div class="right">
-            <h3>Contact</h3>
             <h4>Address:</h4>
             <h5>WINDOW KING, PROFESSIONAL WINDOW CLEANING,</h5>
             <h4>Phone:</h4>
-            <h5>+91 9999999990</h5>
+            <h5>+91 94234 49522</h5>
         </div> 
     </section>
 
@@ -198,5 +215,7 @@
         <h3>BHAVESHREE © 2023. Allright Reserved.</h3>
         <h3>Design and Development By WEBINN</h3>
     </section>
+</div>
 </body>
+<script src="tload.js"></script>
 </html>

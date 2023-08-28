@@ -7,7 +7,7 @@
 </head>
 
 <link rel="stylesheet" href="contact.css">
-<link rel="stylesheet" href="index.css">
+
 <script  src="./scripts.js"></script>
 
 <body>
@@ -20,43 +20,53 @@
         <a href='index.html'><img class="logo"  src="assets/logo.png" alt="" ></a>
         <button class="navbar-toggle" onclick="toggleNavbar()"><img src="assets/menu.png" alt="" height="64px"></button>
          <ul class="change-color">
-            <li><a href= INDEX.html>HOME</li>
+            <li><a href= INDEX.html>HOME</a></li>
             <li><a href= Investment.html>INVESTMENT</li>
             <li><a href= home.html>REAL ESTATE</a></li>
-            <li><a href= Insurance.html>INSURANCE</a></li>
+            <li><a href= Ins.html>INSURANCE</a></li>
             <li><a href= loan.html>LOAN</a></li>
          </ul>
 
     </section>
 
     <section id="listitem">
-        <ul>
-            <li class="first"><a href= >CARS</li>
-            <li><a href=>REAL ESTATE</a></li>
-            <li><a href=>MEDICAL</a></li>
+        <ul>        
+                    <li><a href= INDEX.html>HOME</a></li>
+                    <li><a href= Investment.html>INVESTMENT</li>
+                    <li><a href= home.html>REAL ESTATE</a></li>
+                    <li><a href= Ins.html>INSURANCE</a></li>
+                    <li><a href= loan.html>LOAN</a></li>
+                    
+                    
+                
          </ul>
     </section>
 
-    
-    <button id="show-form-button" >CONTACT US</button>
+    <form id="contact-form">
+        <div class="form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <label for="service">Service:</label>
+            <select id="service" name="service">
+                <option value="service1">Loan</option>
+                <option value="service2">Investments</option>
+                <option value="service3">Consultation</option>
+                <option value="service4">Insurance</option>
+            </select>
+                        
+            <button type="submit">Submit</button>
+
+            
+        </div>
+    </form>
 
     
-        <form id="contact-form" class="hidden">
-            <div class="form">
-            <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone" required>
-                
-                <label for="service">Service:</label>
-                <select id="service" name="service">
-                    <option value="service1">Service 1</option>
-                    <option value="service2">Service 2</option>
-                    <option value="service3">Service 3</option>
-                </select>            
-                <button type="submit">Submit</button>
-            </div>
-        </form>
+    
         
 
         <section class="one">
@@ -104,16 +114,14 @@
             <div class="left">
                 <img src="assets/logo.png" alt="">
                 <p>
-                    WINDOW KING, PROFESSIONAL WINDOW CLEANING,
-                    IS A LOCAL FAMILY RUN WINDOW CLEANING SERVICE
-                    THAT BEEN IN BUSINESS SINCE 1998.
+                    Explore a world of financial opportunities with our comprehensive services. Invest wisely, real estate options,assistance for insurance claims, flexible loan options and receive personalized financial consultations
                 </p>
             </div>
             <div class="right">
                 <h4>Address:</h4>
                 <h5>WINDOW KING, PROFESSIONAL WINDOW CLEANING,</h5>
                 <h4>Phone:</h4>
-                <h5>+91 9999999990</h5>
+                <h5>+91 94234 49522</h5>
             </div> 
         </section>
 
@@ -121,9 +129,10 @@
             <h3>BHAVESHREE © 2023. Allright Reserved.</h3>
             <h3>Design and Development By WEBINN</h3>
         </section>
+    </div>
 
 </body>
 
-<script  src="./t.js"></script>
+<script src="tload.js"></script>
 
 </html>

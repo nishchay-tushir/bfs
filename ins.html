@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="Insurance.css">
     <script src="Insurance.js"></script>
     
+    
 </head>
 <body>
     <div class="loading-screen" id="loadingScreen">
@@ -24,6 +25,39 @@
             <li><a href= consultation.html>CONSULTATION</a></li>
          </ul>
     </section>
+    <section id="listitem">
+        <ul>
+            <li><a href= index.html>HOME</li>
+            <li class="first"><a href="Investment.html" >INVESTMENT</li>
+            <li><a href="home.html">REAL ESTATE</a></li>
+            <li><a href="loan.html">LOAN</a></li>
+            <li><a href="consultation.html">CONSULTATION</a></li>
+         </ul>
+    </section>
+
+
+    <form id="contact-form">
+        <div class="form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <label for="service">Service:</label>
+            <select id="service" name="service">
+                <option value="service1">Loan</option>
+                <option value="service2">Investments</option>
+                <option value="service3">Consultation</option>
+                <option value="service4">Insurance</option>
+            </select>
+                        
+            <button type="submit">Submit</button>
+
+            
+        </div>
+    </form>
 
     <section class="header">
             <a href="property.html"><img src="" alt=""></a>
@@ -35,16 +69,17 @@
         <div class="side" id="sidep">
         <div class="sidepanel">
             <img src="assets/hom.png" alt="" width="220px" height="130px">
-            <h2>Why get health insurance?</h2>
+            <h2>Why to have Insurance?</h2>
             <h3>_________</h3>
-            <p><br> About 60% of India is at risk of earthquakes, 12% to extreme flooding, and 8% to cyclones.</p>
+            <p><br> About 58% of India is at risk of earthquakes, 10% to extreme flooding, and 7% to cyclones.</p>
         </div>
         <div class="sidepanel1">
-            <h2>Value of Human<br>Life ...</h2>
+            <h2>Why choose us?</h2>
             <h3>_________</h3>
-            <p><br>Secure your residence against Natural Disasters, fire and theft.</p>
-            <img src="assets/valueoflife.png" alt="" width="200px">
+            <p><br>Our insurance offers financial security, covering unforeseen risks such as health issues, and property damage, ensuring your peace of mind.</p>
+            <img src="assets/valueoflife.png" alt="" width="160px">
         </div>
+        <div class="wrap"></div>
         <div class="sidepanel2">
             <h2>General Insurance </h2>
             <svg id="scrollIcon" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi" viewBox="0 0 16 16">
@@ -64,9 +99,8 @@
             <p>Life Insurance</p>
         </div>
         </div>
+        </div>
     </section>
-
-    <button class="chatbox" onclick="togglecontact()">CONTACT US</button>
 
     <section class="testimonial" id="targetSection">
 
@@ -79,31 +113,30 @@
                 <div>
                     <h1>Car Insurance</h1>
                     <h3>_________________________</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ex velit expedita. Aut inventore quis doloremque cupiditate unde aperiam vero ipsam atque quas? Dolor nulla possimus facilis excepturi molestiae suscipit.</p>
+                    <p>Car insurance provides coverage for accidents and damages involving your vehicle, offering financial protection and complying with legal requirements.</p>
                 </div>
             </div>
             <div class="testimonial-col1" id="SlideInFromRight"> 
                 <div>
                     <h1>Bike Insurance</h1>
                     <h3>_________________________</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quisquam ex velit expedita. Aut inventore quis doloremque
-                    cupiditate unde aperiam vero ipsam atque quas? Dolor
-                    nulla possimus facilis excepturi molestiae suscipit.</p>
+                    <p>
+                        Bike insurance safeguards against accidents and theft, providing financial support for repairs or replacements, ensuring worry-free cycling experiences.</p>
                 </div>
             </div>
             <div class="testimonial-col" id="animateFromLeft">
                 <div>
                     <h1>Home Insurance</h1>
                     <h3>_________________________</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ex velit expedita. Aut inventore quis doloremque cupiditate unde aperiam vero ipsam atque quas? Dolor nulla possimus facilis excepturi molestiae suscipit.</p>
+                    <p>Home insurance shields your property from damages, theft, and liabilities, providing financial security and peace of mind for homeowners.</p>
                 </div>
             </div>
             <div class="testimonial-col1" id="SlideInFromRight">
                 <div>
-                    <h1>Any Other Insurance</h1>
+                    <h1>Other Insurance</h1>
                     <h3>_________________________</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ex velit expedita. Aut inventore quis doloremque cupiditate unde aperiam vero ipsam atque quas? Dolor nulla possimus facilis excepturi molestiae suscipit.</p>
+                    <p>
+                        Other insurance covers diverse needs like travel, business, and more, offering tailored protection against unforeseen events and losses.</p>
                 </div>
             </div>
         </div>
@@ -118,19 +151,19 @@
         <div class="rows">
             <div class="testimonials-col" id="animateFromLeft">
                 <div>
-                    <h1>Why get Life Insurance ?</h1>
+                    <h1>Why get Life Insurance?</h1>
                     <h3><br>_________________________</h3>
                     <p>Life insurance is a vital safeguard that provides reassurance and financial protection for you and your loved ones. It acts as a lifeline, offering a safety net against the uncertainties of life. In the event of your passing, life insurance ensures that your family's financial needs, including outstanding debts, living expenses, and future goals, are taken care of. It grants you the peace of mind that comes from knowing your family will be supported during challenging times. Life insurance isn't just a policy; it's a commitment to the well-being and future security of those you care about most.</p>
                 </div>
             </div>
             <div class="testimonials-col1" id="slideInFromRight"> 
                 <div>
-                    <img src="assets/lif.png" alt="" width="50%">
+                    <img src="assets/lif.png" alt="" width="70%">
                 </div>
             </div>
             <div class="testimonials-col" id="animateFromLeft">
                 <div>
-                    <img src="assets/valueofhuman1.png" alt="">
+                    <img src="assets/mntl.png" alt="">
                 </div>
             </div>
             <div class="testimonials-col1" id="slideInFromRight">
@@ -219,18 +252,14 @@
         <div class="left">
             <img src="assets/logo.png" alt="">
             <p>
-                WINDOW KING, PROFESSIONAL WINDOW CLEANING,
-                IS A LOCAL FAMILY RUN WINDOW CLEANING SERVICE
-                THAT BEEN IN BUSINESS SINCE 1998.
+                Explore a world of financial opportunities with our comprehensive services. Invest wisely, real estate options,assistance for insurance claims, flexible loan options and receive personalized financial consultations
             </p>
         </div>
-
         <div class="right">
-            <h3>Contact</h3>
             <h4>Address:</h4>
             <h5>WINDOW KING, PROFESSIONAL WINDOW CLEANING,</h5>
             <h4>Phone:</h4>
-            <h5>+91 9999999990</h5>
+            <h5>+91 94234 49522</h5>
         </div> 
     </section>
 
@@ -238,7 +267,9 @@
         <h3>BHAVESHREE © 2023. Allright Reserved.</h3>
         <h3>Design and Development By WEBINN</h3>
     </section>
+</div>
 </body>
+
 <script>
     document.getElementById("scrollIcon").addEventListener("click", function() {
         const targetSection = document.getElementById("targetSection");
@@ -261,5 +292,7 @@
           }, 2500); 
         });
       });
+      
     </script>
+    <script src="tload.js"></script>
 </html>

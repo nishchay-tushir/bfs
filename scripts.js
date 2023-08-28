@@ -74,7 +74,6 @@ function handleScroll() {
   const flexContainer = document.querySelector('.centeralign');
   if (isElementInViewport(flexContainer)) {
     flexContainer.classList.add('visible');
-    window.removeEventListener('scroll', handleScroll);
   }
 }
 

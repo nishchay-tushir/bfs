@@ -3,91 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Investment Policy</title>
-    <link rel="stylesheet" href="Insurance.css">
-    <script src="Insurance.js"></script>
+    <title>Investment</title>
+    <link rel="stylesheet" href="Investment.css">
+    <script src="Investment.js"></script>
+    
+    
 </head>
 <body>
     <div class="loading-screen" id="loadingScreen">
         <img src="assets/logo.png" alt="Loading Screen Image">
     </div>
-    <section class="navd">
+    <section class="navd" id="navbar">
         <div class="whitepart"></div>
         <a href='index.html'><img class="logo"  src="assets/logo.png" alt="" ></a>
         <button class="navbar-toggle" onclick="toggleNavbar()"><img src="assets/menu.png" alt="" height="64px"></button>
          <ul class="change-color">
             <li><a href= index.html>HOME</li>
-            <li><a href= Investment.html>INVESTMENT</a></li>
-            <li><a href= home.html>REAL ESTATE</a></li>
+                <li><a href= home.html>REAL ESTATE</a></li>
+            <li><a href= Ins.html>INSURANCE</li>
             <li><a href= loan.html>LOAN</a></li>
             <li><a href= consultation.html>CONSULTATION</a></li>
          </ul>
     </section>
+    <section id="listitem">
+        <ul>
+            <li><a href= index.html>HOME</li>
+                <li><a href="Ins.html">INSURANCE</a></li>
+            <li><a href="home.html">REAL ESTATE</a></li>
+            <li><a href="loan.html">LOAN</a></li>
+            <li><a href="consultation.html">CONSULTATION</a></li>
+         </ul>
+    </section>
+
+
+    <form id="contact-form">
+        <div class="form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <label for="service">Service:</label>
+            <select id="service" name="service">
+                <option value="service1">Loan</option>
+                <option value="service2">Investments</option>
+                <option value="service3">Consultation</option>
+                <option value="service4">Insurance</option>
+            </select>
+                        
+            <button type="submit">Submit</button>
+
+            
+        </div>
+    </form>
+
 
     <section class="header">
             <a href="property.html"><img src="" alt=""></a>
     
         <div class="text-box" id="animateFromLeft">
-            <h1 class="fy">Medical Assurance</h1>
-            <p>Secure yourself and your loved ones through tough times</p>
+            <h1 class="fy">Guided Investment</h1>
+            <p>
+                Insurance guided by experts for optimal protection and peace.</p>
         </div>
         <div class="side" id="sidep">
         <div class="sidepanel">
             <img src="assets/hom.png" alt="" width="220px" height="130px">
-            <h2>Why get health insurance?</h2>
+            <h2>Why to have Insurance?</h2>
             <h3>_________</h3>
-            <p><br> About 60% of India is at risk of earthquakes, 12% to extreme flooding, and 8% to cyclones.</p>
+            <p><br> About 58% of India is at risk of earthquakes, 10% to extreme flooding, and 7% to cyclones.</p>
         </div>
         <div class="sidepanel1">
-            <h2>Human life <br>value...</h2>
+            <h2>Why choose us?</h2>
             <h3>_________</h3>
-            <p><br>Secure your residence against Natural Disasters, fire and theft.</p>
-            <img src="assets/valueoflife.png" alt="" width="200px">
+            <p><br>Our insurance offers financial security, covering unforeseen risks such as health issues, and property damage, ensuring your peace of mind.</p>
+            <img src="assets/valueoflife.png" alt="" width="160px">
+        </div>
+        <div class="wrap"></div>
+        <div class="sidepanel2">
+            <h2>General Insurance </h2>
+            <svg id="scrollIcon" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi" viewBox="0 0 16 16">
+                <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+              </svg>
+            <h3>_________</h3>
+            <p><br>General Insurance</p>
+            <p>Life Insurance</p>
         </div>
         <div class="sidepanel2">
-            <h2>Peace of Mind...</h2>
+            <h2>Life <br> Insurance</h2>
+            <svg id="scrollIcon1" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi" viewBox="0 0 16 16">
+                <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+              </svg>
             <h3>_________</h3>
-            <p><br>Knowing that you're covered by a mediclaim policy brings peace of mind. You won't have to worry about medical expenses affecting your financial stability.</p>
+            <p><br>General Insurance</p>
+            <p>Life Insurance</p>
+        </div>
         </div>
         </div>
     </section>
 
-    <button class="chatbox" onclick="togglecontact()">CONTACT US</button>
+    <section class="testimonial" id="targetSection">
 
-    <section class="testimonial">
-        <h1>OUR SERVICES</h1>
-        <h2>_______</h2>
-
+        <h1>Invest with us</h1>
+        <h2 class="sideline1">__________________</h2>
+        <h2 class="sideline2">__________________</h2>
+        
         <div class="row">
             <div class="testimonial-col" id="animateFromLeft">
-                <div>
-                    <h3>Home Loan</h3>
-                    <h3>_________________________</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ex velit expedita. Aut inventore quis doloremque cupiditate unde aperiam vero ipsam atque quas? Dolor nulla possimus facilis excepturi molestiae suscipit.</p>
+                <div class="flare">
+                    <div>
+                    <h1>General investment consulting</h3>
+                        <P>We are Sub broker of Angel broking Ltd, provides the demat and trading accounts.
+                             Also help people to create wealth in stock market. Also provide the FD, IPO, 
+                             Right issues etc services.</P>
+                            </div>
+                    <div class="flare1">
+                        <img src="assets/inv1.jpg" alt="" width="40%">
+                    </div>
                 </div>
             </div>
             <div class="testimonial-col1" id="SlideInFromRight"> 
-                <div>
-                    <h3>Find Your Perfect Home</h3>
-                    <h3>_________________________</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quisquam ex velit expedita. Aut inventore quis doloremque
-                    cupiditate unde aperiam vero ipsam atque quas? Dolor
-                    nulla possimus facilis excepturi molestiae suscipit.</p>
+                <div class="flare">
+                    <img src="assets/inv1.jpg" alt="" width="40%">
+                    <div class="flare1">
+                        <h1>INVESTMENT IS AN ASSET TO YOUR NET-WORTH</h3>
+                            <P>
+                                Investment plays a pivotal role in shaping one's financial future. 
+                                It serves as a means to grow wealth and enhance one's net worth over time. 
+                                By strategically allocating funds into various assets such as stocks, bonds,
+                                 real estate, or mutual funds, individuals and businesses aim to generate 
+                                 returns that outpace inflation and accumulate value. Effective investment 
+                                 decisions require careful research, risk assessment, and alignment with 
+                                 long-term financial goals. As investments appreciate in value, they contribute
+                                  significantly to overall financial security, retirement planning, and the 
+                                  achievement of life milestones. Whether aiming for capital appreciation, 
+                                  regular income, or both, prudent investment practices are instrumental in 
+                                  realizing financial aspirations and securing a stable financial foundation.</P>
+                    </div>
                 </div>
             </div>
-            <div class="testimonial-col" id="animateFromLeft">
+        </div>
+    </section>
+
+    <section class="testimonials" id="targetSection1">
+
+        <h1>Life Insurance</h1>
+        <h2 class="sidelines1">__________________</h2>
+        <h2 class="sidelines2">__________________</h2>
+        
+        <div class="rows">
+            <div class="testimonials-col" id="animateFromLeft">
                 <div>
-                    <h3>Home Insurance</h3>
-                    <h3>_________________________</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ex velit expedita. Aut inventore quis doloremque cupiditate unde aperiam vero ipsam atque quas? Dolor nulla possimus facilis excepturi molestiae suscipit.</p>
+                    <h1>Why get Life Insurance?</h1>
+                    <h3><br>_________________________</h3>
+                    <p>Life insurance is a vital safeguard that provides reassurance and financial protection for you and your loved ones. It acts as a lifeline, offering a safety net against the uncertainties of life. In the event of your passing, life insurance ensures that your family's financial needs, including outstanding debts, living expenses, and future goals, are taken care of. It grants you the peace of mind that comes from knowing your family will be supported during challenging times. Life insurance isn't just a policy; it's a commitment to the well-being and future security of those you care about most.</p>
                 </div>
             </div>
-            <div class="testimonial-col1" id="SlideInFromRight">
+            <div class="testimonials-col1" id="slideInFromRight"> 
                 <div>
-                    <h3>A - Z Property Legal Solutions</h3>
-                    <h3>_________________________</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ex velit expedita. Aut inventore quis doloremque cupiditate unde aperiam vero ipsam atque quas? Dolor nulla possimus facilis excepturi molestiae suscipit.</p>
+                    <img src="assets/lif.png" alt="" width="70%">
+                </div>
+            </div>
+            <div class="testimonials-col" id="animateFromLeft">
+                <div>
+                    <img src="assets/mntl.png" alt="">
+                </div>
+            </div>
+            <div class="testimonials-col1" id="slideInFromRight">
+                <div>
+                    <h1>Value of Human Life...</h1>
+                    <h3><br>_________________________</h3>
+                    <p>The value of human life is immeasurable and profound. Each individual brings a unique set of experiences, emotions, and potential to the world. Beyond any monetary worth, human life is the essence of our societies, driving progress, compassion, and connection. Every life holds the power to create, inspire, and impact others in ways that ripple through generations. Recognizing and respecting the value of human life underscores our shared humanity and prompts us to cherish, protect, and uplift one another, fostering a world of empathy, equality, and boundless possibilities.</p>
                 </div>
             </div>
         </div>
@@ -116,10 +204,48 @@
             </div>
             <div class="pro">
                 <img src="assets/support.png" alt="" width="140px">
+                <h3>Customer Support</h3>
+                <p>Full Assistance</p>
+            </div>
+            <div class="pro">
+                <img src="assets/help.png" alt="" width="135px">
+                <h3>Happy to Help</h3>
+                <p>Always</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section3">
+        <h1>What We Assure</h1>
+        <h2>_______</h2>
+        <p class="font"><br><br>When you buy insurance from us, you get more than just financial safety. You also get: our promise of simplifying complex insurance terms and conditions, quick stress-free claims, instant quotes from  <br> top insurers and being present for you in the toughest of times.
+        </p>
+        <div class="ro1">
+            <div class="pro1">
+                <img src="assets/bestprice.png" alt="" width="150px">
+                <h3>Best Prices</h3>
+                <p>For sure</p>
+            </div>
+            <div class="pro1">
+                <img src="assets/advice.png" alt="" width="135px">
+                <h3>Unbiased Advice</h3>
+                <p>Customer is king</p>
+            </div>
+        </div>
+        <div class="ro1">
+            <div class="pro1">
+                <img src="assets/reliable.png" alt="" width="178px">
+                <h3>100% Reliable</h3>
+                <p>Trustworthy</p>
+            </div>
+            <div class="pro1">
+                <img src="assets/support.png" alt="" width="140px">
                 <h3>Claims Settlement</h3>
                 <p>Hassle-free</p>
             </div>
-            <div class="pro">
+        </div>
+        <div class="ro1">
+            <div class="pro1">
                 <img src="assets/help.png" alt="" width="135px">
                 <h3>Happy to Help</h3>
                 <p>Always</p>
@@ -131,18 +257,14 @@
         <div class="left">
             <img src="assets/logo.png" alt="">
             <p>
-                WINDOW KING, PROFESSIONAL WINDOW CLEANING,
-                IS A LOCAL FAMILY RUN WINDOW CLEANING SERVICE
-                THAT BEEN IN BUSINESS SINCE 1998.
+                Explore a world of financial opportunities with our comprehensive services. Invest wisely, real estate options,assistance for insurance claims, flexible loan options and receive personalized financial consultations
             </p>
         </div>
-
         <div class="right">
-            <h3>Contact</h3>
             <h4>Address:</h4>
             <h5>WINDOW KING, PROFESSIONAL WINDOW CLEANING,</h5>
             <h4>Phone:</h4>
-            <h5>+91 9999999990</h5>
+            <h5>+91 94234 49522</h5>
         </div> 
     </section>
 
@@ -150,5 +272,32 @@
         <h3>BHAVESHREE © 2023. Allright Reserved.</h3>
         <h3>Design and Development By WEBINN</h3>
     </section>
+</div>
 </body>
+
+<script>
+    document.getElementById("scrollIcon").addEventListener("click", function() {
+        const targetSection = document.getElementById("targetSection");
+        targetSection.scrollIntoView({ behavior: "smooth" });
+      });
+    document.getElementById("scrollIcon1").addEventListener("click", function() {
+        const targetSection = document.getElementById("targetSection1");
+        targetSection.scrollIntoView({ behavior: "smooth" });
+      });
+      const navbar = document.getElementById("navbar");
+      const svgs = document.querySelectorAll("svg"); 
+    
+      svgs.forEach(svg => {
+        svg.addEventListener("click", function() {
+          navbar.classList.toggle("hide-navbar");
+          
+
+          setTimeout(function() {
+            navbar.classList.toggle("hide-navbar");
+          }, 2500); 
+        });
+      });
+      
+    </script>
+    <script src="tload.js"></script>
 </html>

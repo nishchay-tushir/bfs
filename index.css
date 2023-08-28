@@ -194,7 +194,15 @@ label {
     display: block;
     margin-bottom: 5px;
 }
-
+#message {
+    width: 105%;
+    height: 50px;
+    resize: vertical;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
 input[type="text"],
 input[type="tel"],
 select {
@@ -481,12 +489,12 @@ button[type="submit"]:hover {
     background-color: #0e0d0d;
     display: grid;
     grid-template-columns: 50% 50%;
-    height: 15rem;
+    height: 12rem;
 }
 
 .footer p{
     color: aliceblue;
-    padding-top: 20%;
+    padding-top: 10%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 500;
 }
@@ -498,7 +506,7 @@ button[type="submit"]:hover {
 
 .left img{
     height: 150px;
-    padding: 20%;
+    padding: 10%;
 
 }
 
@@ -660,7 +668,7 @@ button[type="submit"]:hover {
         }
 
         #skills{
-            height: 60rem;
+            height: 55rem;
         }
 
         #skills h3{
@@ -685,7 +693,7 @@ button[type="submit"]:hover {
             min-height: 64rem;
         }
         .reviews h1{
-            font-size: 3.5ch;
+            font-size: 3ch;
         }
 
         .reviews p{
@@ -693,7 +701,7 @@ button[type="submit"]:hover {
         }
 
         .starbox{
-            margin-top: 30px;
+            margin-top: 20px;
             grid-template-columns: 40% 60%;
             width: 80%;
         }
@@ -740,7 +748,7 @@ button[type="submit"]:hover {
         .rw{
             display: grid;
             position: absolute;
-            margin-top: 320px;
+            margin-top: 300px;
             grid-template-columns: 100%;
             grid-gap: 20px;
             width: 80%;
@@ -767,14 +775,12 @@ button[type="submit"]:hover {
         .testimonial h3{
             text-align: left;
             font-size: 15px;
-            margin-bottom: 10px;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
         .testimonial-col p{
             text-align: left;
-            margin-top: 5px;
+            margin-top: px;
             font-size: 10px;
-            margin-bottom: 20px;
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         }
 
@@ -787,20 +793,59 @@ button[type="submit"]:hover {
         }
 
         .footer{
+            background-color: #0e0d0d;
+            display: grid;
+            grid-template-columns: 50% 50%;
             height: 8rem;
-            grid-template-columns: 100%;
         }
-
+        
+        .footer p{
+            color: aliceblue;
+            padding-top: 10%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 500;
+            font-size: 1ch;
+        }
+        
+        .left{
+            display: grid;
+            grid-template-columns: 30% 50%;
+        }
+        
         .left img{
-            height: 64px;
+            height: 50px;
+            padding: 10%;
+            padding-top: 60%;
+        
         }
-
-        .right{
-            display: none;
+        
+        .footer h3{
+            color: aliceblue;
+            font-weight: 600;
+            font-size: 1ch;
+            padding: 0;
+        }
+        
+        .footer h4{
+            color: aliceblue;
+            font-size: 1.5ch;
+        }
+        
+        .footer h5{
+            color: #fffb0cb9;
+            padding-top: 10px;
+            font-size: 1ch;
+        }
+        
+        .footerbottom{
+            background-color: #000000;
+            display: grid;
             grid-template-columns: 50% 50%;
         }
-
-        .footer p{
+        
+        .footerbottom h3{
+            padding: 0;
+            color: aliceblue;
             font-size: 1ch;
         }
         

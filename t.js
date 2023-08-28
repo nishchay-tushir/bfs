@@ -31,7 +31,9 @@ const showFormButton = document.getElementById("show-form-button");
         const message = `New Contact Form Submission:
 Name: ${data.name}
 Phone Number: ${data.phone}
-Service: ${data.service}`;
+Service: ${data.service}
+Message: ${data.message}`;
+
 
         const url = `https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(message)}`;
         

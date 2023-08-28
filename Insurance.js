@@ -61,5 +61,14 @@ window.addEventListener('scroll', function() {
   //       section.style.left = "0"; // Set the left property to 0 to move the section in from the left
   //   }, 100);
   //   });
-
+  document.addEventListener("DOMContentLoaded", function () {
+    const section = document.getElementById("animateFromLeft");
   
+    setTimeout(function () {
+        section.style.left = "0"; // Set the left property to 0 to move the section in from the left
+    }, 100);
+    });
+    function toggleNavbar() {
+      var navbarLinks = document.getElementById("listitem");
+      navbarLinks.classList.toggle("show");
+}
