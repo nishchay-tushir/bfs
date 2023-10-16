@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="t.css">
+    <link rel="stylesheet" href="home.css">
+    
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <script  src="consultation.js"></script>
+    <!-- <script src="script.js"></script> -->
+    <title>Home</title>
+</head>
+<body>
+  <div class="loading-screen" id="loadingScreen">
+    <img src="images/logo.png" alt="Loading Screen Image">
+  </div>
+    <nav>
+        <div class="logo"><img src="images/logo.png" alt="" width="13%"></div>
+        <div class="burger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="realestate.html">REAL ESTATE</a></li>
+            <li><a href="consultation.html">CONSULTATION</a></li>
+            <li><a href="loan.html">LOAN</a></li>
+            <li><a href="investment.html">INVESTMENT</a></li>
+            <li><a href="insurance.html">INSURANCE</a></li>
+            
+            
+        </ul>
+    </nav>
+
+
+
+<button id="show-form-button">CONTACT US</button>
+
+<form id="contact-form" class="hidden">
+    
+    <div class="form">
+      <button id="close-form-button" onclick="closeForm()">✖</button>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        
+        <label for="service">Service:</label>
+        <select id="service" name="service">
+            <option value="Loan">Loan</option>
+            <option value="Investments">Investments</option>
+            <option value="Consultations">Consultation</option>
+            <option value="Insurance">Insurance</option>
+        </select>
+        <button type="submit">Submit</button>
+    </div>
+</form>
+
+    
+    
+    <header class="showcase">
+        <h2>BHAVESHREE FINANCIAL SOLUTIONS</h2>
+        <p>
+          Navigating Your Financial Journey, Ensuring Prosperous Tomorrows.
+        </p>
+        <!-- <a href="#" class="btn">
+          Shop Now <i class="fas fa-chevron-right"></i>
+        </a> -->
+      </header>
+  
+      <br>
+      <h1 class="services-text">SERVICES</h1>
+      <br>
+      <section class="xbox">
+        <div class="content">
+          <h2>REAL ESTATE SOLUTIONS</h2>
+          <p>Analyze, strategize, and collaborate, leveraging expertise to craft <br> personalized solutions for real estate and home-related challenges.</p>
+            <a href="realestate.html" class="btn">
+              Visit <i class="fas fa-chevron-right"></i>
+            </a>
+        </div>
+      </section>
+
+      <br>
+      <br>
+
+      <!-- Home cards 1 -->
+      <section class="home-cards">
+        <div>
+          <img src="images/consultation.jpg" alt="" height="50%"/>
+          <h3>CONSULTATION</h3>
+          <p>
+            We offer expert consultations, tailored advice and strategic guidance, enabling clients to make informed decisions for optimal outcomes.
+          </p>
+          <a href="consultation.html">Learn More <i class="fas fa-chevron-right"></i></a>
+        </div>
+        <div>
+          <img src="images/loanhome.jpg" alt="" height="50%">
+          <h3>LOAN</h3>
+          <p>
+            Our firm specializes in providing substantial personal loans, tailored to meet your financial needs and empower your aspirations.
+          </p>
+          <a href="loan.html">Learn More <i class="fas fa-chevron-right"></i></a>
+        </div>
+
+        <div>
+          <img src="images/investment.png" alt="" height="49%"/>
+          <h3>INVESTMENT</h3>
+          <p>
+            We provide investment guidance, portfolio analysis, risk assessment, and strategic planning to empower clients for financial success.
+          </p>
+          <a href="investment.html">Learn More <i class="fas fa-chevron-right"></i></a>
+        </div>
+        <div>
+          <img src="images/insurancehome.jpg" alt="" height="49%"/>
+          <h3>INSURANCE</h3>
+          <p>
+            Choose our insurance for tailored coverage, excellent service, and peace of mind in safeguarding your future and assets.
+          </p>
+          <a href="insurance.html">Learn More <i class="fas fa-chevron-right"></i></a>
+        </div>
+      </section>
+  
+      
+      
+
+      <h1 class="services-text">ABOUT US</h1>
+        
+        <!-- Carbon -->
+        <section class="carbon dark">
+          <div class="content">
+            <h2>Commiting To Carbon Negative</h2>
+            <p>Microsoft will be carbon negative by 2030 and by 2050 we will remove
+              all carbon the company has emitted since it was founded in 1975</p>
+              <a href="#" class="btn">
+                Learn More <i class="fas fa-chevron-right"></i>
+              </a>
+          </div>
+        </section>
+      </div>
+
+      <footer class="flex">
+        <section class="flex_content padding_2x">
+            <img src="images/logo.png" alt="" width="10%">
+            <p><b>Office Address:</b> F-1 Anita Apartment, Tanaji Nagar, Chinchwad <br><br></p>
+            <p><b>Email:</b> bhaveshreefinsolution@gmail.com <br><br></p>
+            <p><b>Contact Us:</b> +91 9423449522<br><br><br><br></p>
+        </section>
+        <section class="flex_content">
+            <p><b>QUICK LINKS <br><br></b></p>
+            <a href="home.html">Home</a>
+            <a href="realestate.html">Real Estate</a>
+            <a href="insurance.html">Insurance</a>
+            <a href="loan.html">Loan</a>
+            <a href="investment.html">Investment</a>
+            <a href="consultation.html">Consultation <br><br><br><br></a>
+        </section>
+        <section class="flex_content padding_1x">
+            <p><br>© 2023 BHAVESHREE FINANCIAL SERVICES || All rights reserved <br><br>Designed and Developed by WebINN</p>
+        </section>
+    </footer>
+
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+    const burgerMenu = document.querySelector('.burger-menu');
+    const navLinks = document.querySelector('.nav-links');
+    const dropdownMenu = document.querySelector('.dropdown-menu');
+    const overlay = document.querySelector('.overlay');
+
+    burgerMenu.addEventListener('click', function () {
+        burgerMenu.classList.toggle('active');
+        navLinks.classList.toggle('active');
+        overlay.classList.toggle('active');
+    });
+
+    overlay.addEventListener('click', function () {
+        burgerMenu.classList.remove('active');
+        navLinks.classList.remove('active');
+        overlay.classList.remove('active');
+    });
+
+    burgerMenu.addEventListener('click', function () {
+        dropdownMenu.classList.toggle('active');
+    });
+
+    overlay.addEventListener('click', function () {
+        dropdownMenu.classList.remove('active');
+    });
+});
+
+</script>
+
+<script  src="./t.js"></script>
+</html>

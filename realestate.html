@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="t.css">
+    <link rel="stylesheet" href="realestate.css">
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <script  src="consultation.js"></script>
+    <title>Real Estate</title>
+</head>
+
+<body>
+    <div class="loading-screen" id="loadingScreen">
+        <img src="images/logo.png" alt="Loading Screen Image">
+    </div>
+    <nav>
+        <div class="logo"><img src="images/logo.png" alt="" width="11%"></div>
+        <div class="burger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="realestate.html">REAL ESTATE</a></li>
+            <li><a href="consultation.html">CONSULTATION</a></li>
+            <li><a href="loan.html">LOAN</a></li>
+            <li><a href="investment.html">INVESTMENT</a></li>
+            <li><a href="insurance.html">INSURANCE</a></li>
+            
+        </ul>
+    </nav>
+
+
+    <button id="show-form-button">CONTACT US</button>
+
+<form id="contact-form" class="hidden">
+    
+    <div class="form">
+      <button id="close-form-button" onclick="closeForm()">✖</button>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        
+        <label for="service">Service:</label>
+        <select id="service" name="service">
+            <option value="Loan">Loan</option>
+            <option value="Investments">Investments</option>
+            <option value="Consultations">Consultation</option>
+            <option value="Insurance">Insurance</option>
+        </select>
+        <button type="submit">Submit</button>
+    </div>
+</form>
+
+
+    
+    <!--HEADER-->
+    <header>
+        <article>
+            <h1 class="title big"> <em>REAL</em> ESTATE <em>&</em> PROPERTY RELATED SOLUTIONS<em>.</em> </h1>
+            <p>We analyze, strategize, and collaborate, leveraging expertise to craft personalized solutions for real estate and home-related challenges, ensuring client satisfaction.</p>
+        </article>
+    </header>
+    
+    
+    <!--MAIN-->
+    <main id="More">
+        <!--DIVISION_1-->
+        <div class="divisions division_1 flex padding_2x">
+            <section class="flex_content padding_2x">
+                <figure>
+                    <img src="images/findhome.jpg" alt="" loading="lazy" />
+                </figure>
+            </section>
+            <section class="flex_content padding_2x">
+                <article>
+                    <h2 class="title medium">FIND YOUR PERFECT HOME</h2>
+                    <p> Leveraging our expertise, we curate options that align with your preferences, streamlining the search process. Our mission is to assist you in finding your dream home.</p>
+                    <h2 class="title medium"><br><br>WHY GET HOME INSURANCE?</h2>
+                    <p>About 60% of India is at risk of earthquakes, 12% to extreme flooding, and 8% to cyclones.</p>
+                    <aside class="fixed_flex">
+                        <span>
+                            <h4 class="title small">33%</h4>
+                            <p>Rise in property related crimes</p>
+                        </span>
+                        <span>
+                            <h4 class="title small">1,50,000</h4>
+                            <p>Fire Outbreaks Every Year</p>
+                        </span>
+                        <span>
+                            <h4 class="title small">80%</h4>
+                            <p>Underinsured Homes in India</p>
+                        </span>
+                    </aside>
+                </article>
+            </section>
+        </div>
+        
+        <!--DIVISION_2-->
+        <div class="divisions division_2 flex padding_2x">
+            <section class="flex_content padding_2x">
+                <figure>
+                    <img src="images/homins1.jpg" alt=""/>
+                    <figcaption class="padding_1x">
+                        <h2 class="title medium">WHAT WE DO?</h2>
+                        <p>We provide tailored property solutions, optimizing assets through strategic consulting, asset management, and real estate advisory <br>to drive growth and maximize returns.</p>
+                    </figcaption>
+                </figure>
+            </section>
+            <section class="flex_content cards padding_2x flex">
+                <figure class="flex card">
+                    <br><img src="images/mortgage.jpg" alt="" />
+                    <figcaption class="padding_2x">
+                        <h3 class="title small">HOME LOAN</h3>
+                        <p>When you choose our home loan, you gain competitive rates, flexible terms, personalized assistance, and a smooth process, turning your homeownership dreams into reality with confidence and ease.</p>
+                    </figcaption>
+                </figure>
+                <br><br>
+                <figure class="flex card">
+                    <figcaption class="padding_2x">
+                        <h3 class="title small">MORTGAGE LOANS</h3>
+                        <p>Secure your dream home with our flexible mortgage loans, offering competitive rates <br>and personalized repayment plans for your convenience and financial stability.</p>
+                    </figcaption>
+                    <img src="images/mort.jpg" alt=""/>
+                </figure>
+                <br><br>
+                <figure class="flex card">
+                    <br><img src="images/homins2.jpg" alt=""/>
+                    <figcaption class="padding_2x">
+                        <h3 class="title small">RENOVATION LOANS</h3>
+                        <p>Fund your dream renovations effortlessly with our specialized renovation loans, designed to turn your vision into a beautiful reality.</p>
+                    </figcaption>
+                </figure>
+                <figure class="flex card">
+                    <figcaption class="padding_2x">
+                        <h3 class="title small">A-Z PROPERTY LEGAL SOLUTIONS</h3>
+                        <p>From legal assessments to documentation, our A-Z property legal solutions ensure seamless transactions. Trust us to handle complexities, offering expert guidance and peace of mind throughout your real estate endeavors.</p>
+                    </figcaption>
+                    <img src="images/legal.jpg" alt=""/>
+                </figure>
+                <figure class="flex card">
+                    <br>
+                    <img src="images/homeinsured.jpg" alt="" />
+                    <figcaption class="padding_2x">
+                        <h3 class="title small">HOME INSURANCE</h3>
+                        <p>When you choose our home insurance, you're securing comprehensive coverage tailored to your property's needs. With us, you're safeguarding your investment, enjoying peace of mind against unforeseen damages and risks.</p>
+                    </figcaption>
+                </figure>
+            </section>
+        </div>
+    </main>
+    
+    <!--FOOTER-->
+    <footer class="flex">
+        <section class="flex_content padding_2x">
+            <img src="images/logo.png" alt="" width="10%">
+            <p><b>Office Address:</b> F-1 Anita Apartment, Tanaji Nagar, Chinchwad<br></p>
+            <p><b>Email:</b> bhaveshreefinsolution@gmail.com<br></p>
+            <p><b>Contact Us:</b> +91 9423449522<br><br></p>
+        </section>
+        <section class="flex_content">
+            <p><b>QUICK LINKS <br><br></b></p>
+            <a href="home.html">Home</a>
+            <a href="realestate.html">Real Estate</a>
+            <a href="insurance.html">Insurance</a>
+            <a href="loan.html">Loan</a>
+            <a href="investment.html">Investment</a>
+            <a href="consultation.html">Consultation <br><br><br><br></a>
+        </section>
+        <section class="flex_content padding_1x">
+            <p><br>© 2023 BHAVESHREE FINANCIAL SERVICES || All rights reserved <br><br>Design and Development by WebINN</p>
+        </section>
+    </footer>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+    const burgerMenu = document.querySelector('.burger-menu');
+    const navLinks = document.querySelector('.nav-links');
+    const dropdownMenu = document.querySelector('.dropdown-menu');
+    const overlay = document.querySelector('.overlay');
+
+    burgerMenu.addEventListener('click', function () {
+        burgerMenu.classList.toggle('active');
+        navLinks.classList.toggle('active');
+        overlay.classList.toggle('active');
+    });
+
+    overlay.addEventListener('click', function () {
+        burgerMenu.classList.remove('active');
+        navLinks.classList.remove('active');
+        overlay.classList.remove('active');
+    });
+
+    burgerMenu.addEventListener('click', function () {
+        dropdownMenu.classList.toggle('active');
+    });
+
+    overlay.addEventListener('click', function () {
+        dropdownMenu.classList.remove('active');
+    });
+});
+
+</script>
+<script  src="./t.js"></script>
+
+    <html>
