@@ -1,0 +1,125 @@
+#show-form-button {
+    position: fixed;
+    top: 90%;
+    left: 88%;
+    z-index: 5;
+    width: 10rem;
+    padding: 10px;
+    text-align: center;
+    background-color: #000000;
+    backdrop-filter: blur(50px);
+    border-radius: 20px;
+    color: rgba(232, 215, 109, 255);
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  #contact-form {
+    height: 65rem;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    background-color: #0000008b;
+    backdrop-filter: blur(10px);
+  }
+  
+  .form {
+    margin: 15% auto;
+    width: 400px;
+    padding: 40px;
+    border: 1px solid #000000;
+    background-color: #2e2d2d65;
+    color: #ccc;
+    border-radius: 5px;
+    animation: fadeIn 0.5s;
+  }
+  
+  #close-form-button {
+    margin-left: 95%;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #fff;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  #message {
+    width: 105%;
+    height: 50px;
+    resize: vertical;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type="text"],
+  input[type="tel"],
+  select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 768px) {
+    #show-form-button {
+      position: fixed;
+      top: 90%;
+      left: 65%;
+      z-index: 1;
+      width: 8rem;
+      padding: 10px;
+      text-align: center;
+      background-color: #00000025;
+      backdrop-filter: blur(50px);
+      border-radius: 20px;
+      color: rgba(232, 215, 109, 255);
+      padding: 10px;
+      font-size: 1.7ch;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: 700;
+    }
+  
+    #contact-form {
+      
+        height: 80rem; /* Let the form's height adjust based on content on mobile */
+    }
+  
+    .form {
+      margin-top: 40%;
+        width: 90%; /* Adjust the width for better fit on mobile screens */
+        padding: 20px; /* Increase padding for better spacing on mobile */
+    }
+  
+    #message {
+        height: 150px; /* Adjust the height for mobile devices */
+    }
+  }
+  
+  
